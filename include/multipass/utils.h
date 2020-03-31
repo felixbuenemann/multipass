@@ -71,6 +71,7 @@ bool run_cmd_for_status(const QString& cmd, const QStringList& args, const int t
 std::string run_cmd_for_output(const QString& cmd, const QStringList& args, const int timeout=30000);
 std::string& trim_end(std::string& s);
 std::string escape_char(const std::string& s, char c);
+std::string escape_all(const std::string& s);
 std::vector<std::string> split(const std::string& string, const std::string& delimiter);
 std::string generate_mac_address();
 std::string timestamp();
